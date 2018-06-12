@@ -1,12 +1,9 @@
 # Twitter-Python-Project
-I am collecting data on vaccine misinformation on twitter and Facebook and I want to examine how online misinformation disseminates: what are the sources of vaccine misinformation, who are re-tweeting/sharing them online, and what are the comments and attitudes toward vaccine misinformation. At the same time, I am going to collect data on true information that corrects misinformation tweets/posts and promote real knowledge about vaccines. The final project will be examining both true and false vaccine information dissemination, which spreads faster, covers more people, and what are the sentiments and attitudes toward them.
+This project consists of three steps. 
 
- 
+1) Using Twitter's API to collect tweets from accounts that regularly post tweets about vaccination. All tweets were filtered in search for key words (e.g., vaccinations, vaccine etc). The accounts were either accounts that post mis-information about vaccinations or accurate information. Additionally, we collected other variables such as number of favorites and retweets to include as features in future models. 
 
-The significance of this project is that vaccine misinformation has dramatically decreased people’s vaccination rates and vaccination intentions. By knowing how misinformation spreads online and identifying these sources and groups of people disseminating them, we could come up with strategies to target on these people and how to correct or curb the spread of misinformation. At the same time, I am doing research on persuasive strategies of misinformation correction. The results of this misinformation spread study will help me gain insights on the target population and how to develop persuasive strategies.
+2) Using sentiment analysis, we analyzed the content of individual tweets to categorize tweets as either positve, negative, or neutral. Additionally, we assessed a continuous version of the tweets sentiment (0 = negative, 1 = positive) as well as the subjectivity. 
 
- 
-
-I want to collect twitter and Facebook data from misinformation sources that often disseminate vaccine misinformation, starting from them, I am going to collect data on the time of the post, who re-post/retweet them, what are the comments of each tweet/post. Some challenges will be: identifying these sources, the tweets might not be originated from these sources, cleaning data that is irrelevant, data analysis using network analysis methods.
-
+3) Using machine learning, we used SVM to classify tweets as either mis-information or true information based on the features number of retweets and number of favorites as well as the categorical version of the sentiment variable. 
  
